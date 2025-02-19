@@ -1,0 +1,19 @@
+input[type="checkbox"]{
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    /* background-color: aqua; */
+    border-radius: 2px;
+    border: 2px solid #7900BA;
+}
+input[type="checkbox"]::after{
+    content:url('./images/profileimg/Vector.png');
+    font-size: 10px;
+    display: none;
+}
+input[type="checkbox"]:checked::after{
+    display: block;
+}
